@@ -47,8 +47,8 @@ client.query({
   document.getElementById('posts').innerHTML = response.data.posts.reduce((acc, post) => {
     return acc += `
         <div>
-            <h2>${post.title}</h2>
-            <h3>${post.author.name}</h3>
+            <h3>${post.title}</h3>
+            <h4>${post.author.name}</h4>
         </div>
       `
   }, '')
